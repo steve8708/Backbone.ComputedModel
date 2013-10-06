@@ -1,3 +1,5 @@
+Backbone = @Backbone or typeof require is 'function' and require 'backbone'
+
 class Backbone.ComputedModel extends Backbone.Model
   constructor: (items, options = {}) ->
     super
