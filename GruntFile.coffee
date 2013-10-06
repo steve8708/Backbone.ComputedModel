@@ -66,8 +66,8 @@ module.exports = (grunt) ->
         src: [ 'src/backbone.computedmodel.coffee' ]
         overwrite: true
         replacements: [
-          from: /backbone.computedmodel.VERSION = '.*?'/i
-          to: -> "backbone.computedmodel.VERSION = '#{ packageVersion() }'"
+          from: /Backbone.ComputedModel.VERSION = '.*?'/i
+          to: -> "Backbone.ComputedModel.VERSION = '#{ packageVersion() }'"
         ]
 
       debugJS:
