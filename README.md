@@ -1,6 +1,6 @@
 # Backbone.ComputedModel
 
-Computed properties for your backbone models
+Computed properties for your backbone models.
 
 ```coffeescript
 
@@ -9,6 +9,7 @@ class MyModel extends Backbone.ComputedModel
     super
 
   compute:
+    # Computed properties update automatically when their dependencies change.
     totalPrice: [ 'productList', (productList) ->
       _.reduce productList, (memo, product) -> memo + product.price
     ]
